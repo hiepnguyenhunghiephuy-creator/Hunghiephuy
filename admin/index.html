@@ -203,6 +203,7 @@ function pat() { return localStorage.getItem('hhh_pat') || ''; }
 async function gh(path, method = 'GET', body = null) {
   const res = await fetch(API + path, {
     method,
+    cache: 'no-store',
     headers: {
       'Authorization': 'Bearer ' + pat(),
       'Accept': 'application/vnd.github+json',
