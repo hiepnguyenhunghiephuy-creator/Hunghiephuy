@@ -362,10 +362,10 @@ $('btn-login').onclick = async () => {
     }
     const user = $('li-user').value.trim();
     const pass = $('li-pass').value;
-    if (!user || !pass) throw new Error('Vui lòng nhập đủ tên đăng nhập và mật khẩu.');
     let cfg;
     try { cfg = await getFile('admin-config.json'); }
     catch (e) { if (e.code === 404) { show('view-setup'); setBtnLoading(btn, false); return; } throw e; }
+    if (!user || !pass) throw new Error('Vui lòng nhập đủ tên đăng nhập và mật khẩu.');
     const obj = JSON.parse(cfg.content);
     const hash = await sha256(user + '::' + pass);
     if (obj.username !== user || obj.passwordHash !== hash) throw new Error('Sai tên đăng nhập hoặc mật khẩu.');
