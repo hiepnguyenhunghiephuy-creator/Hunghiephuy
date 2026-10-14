@@ -1,1 +1,34 @@
-Ly8gSMawbmcgSGnhu4dwIEh1eSBMb2dpc3RpY3Mg4oCUIG1haW4uanMgKG1vYmlsZSBtZW51ICsgZm9vdGVyIHllYXIgKyBxdW90ZSBmb3JtKQpkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCdET01Db250ZW50TG9hZGVkJywgZnVuY3Rpb24gKCkgewogIHZhciBidG4gPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcubWVudS1idG4nKTsKICB2YXIgbmF2ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ21haW4tbmF2Jyk7CiAgaWYgKGJ0biAmJiBuYXYpIHsKICAgIGJ0bi5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGZ1bmN0aW9uICgpIHsKICAgICAgdmFyIG9wZW4gPSBuYXYuY2xhc3NMaXN0LnRvZ2dsZSgnb3BlbicpOwogICAgICBidG4uc2V0QXR0cmlidXRlKCdhcmlhLWV4cGFuZGVkJywgb3BlbiA/ICd0cnVlJyA6ICdmYWxzZScpOwogICAgfSk7CiAgICBuYXYucXVlcnlTZWxlY3RvckFsbCgnYScpLmZvckVhY2goZnVuY3Rpb24gKGEpIHsKICAgICAgYS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGZ1bmN0aW9uICgpIHsKICAgICAgICBuYXYuY2xhc3NMaXN0LnJlbW92ZSgnb3BlbicpOwogICAgICAgIGJ0bi5zZXRBdHRyaWJ1dGUoJ2FyaWEtZXhwYW5kZWQnLCAnZmFsc2UnKTsKICAgICAgfSk7CiAgICB9KTsKICB9CiAgdmFyIHllYXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgneWVhcicpOwogIGlmICh5ZWFyKSB5ZWFyLnRleHRDb250ZW50ID0gbmV3IERhdGUoKS5nZXRGdWxsWWVhcigpOwoKICAvLyBRdW90ZSBmb3JtOiBidWlsZCBhIG1haWx0byB3aXRoIHRoZSBlbnRlcmVkIGRldGFpbHMgKG5vIGJhY2tlbmQgbmVlZGVkKS4KICB2YXIgZm9ybSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdxdW90ZS1mb3JtJyk7CiAgaWYgKGZvcm0pIHsKICAgIGZvcm0uYWRkRXZlbnRMaXN0ZW5lcignc3VibWl0JywgZnVuY3Rpb24gKGUpIHsKICAgICAgZS5wcmV2ZW50RGVmYXVsdCgpOwogICAgICB2YXIgZmQgPSBuZXcgRm9ybURhdGEoZm9ybSk7CiAgICAgIHZhciBsaW5lcyA9IFsnWcOKVSBD4bqmVSBCw4FPIEdJw4Eg4oCUIFdlYnNpdGUgSMawbmcgSGnhu4dwIEh1eSBMb2dpc3RpY3MnLCAnJ107CiAgICAgIGZkLmZvckVhY2goZnVuY3Rpb24gKHYsIGspIHsgbGluZXMucHVzaChrICsgJzogJyArIHYpOyB9KTsKICAgICAgdmFyIHN1YmplY3QgPSAnWcOqdSBj4bqndSBiw6FvIGdpw6Eg4oCUICcgKyAoZmQuZ2V0KCdI4buNIHTDqm4nKSB8fCAnJyk7CiAgICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gJ21haWx0bzpoaWVwbmd1eWVuLmh1bmdoaWVwaHV5QGdtYWlsLmNvbScKICAgICAgICArICc/c3ViamVjdD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KHN1YmplY3QpCiAgICAgICAgKyAnJmJvZHk9JyArIGVuY29kZVVSSUNvbXBvbmVudChsaW5lcy5qb2luKCdcbicpKTsKICAgIH0pOwogIH0KfSk7Cg==
+// Hưng Hiệp Huy Logistics — main.js (mobile menu + footer year + quote form)
+document.addEventListener('DOMContentLoaded', function () {
+  var btn = document.querySelector('.menu-btn');
+  var nav = document.getElementById('main-nav');
+  if (btn && nav) {
+    btn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+  var year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
+
+  // Quote form: build a mailto with the entered details (no backend needed).
+  var form = document.getElementById('quote-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var fd = new FormData(form);
+      var lines = ['YÊU CẦU BÁO GIÁ — Website Hưng Hiệp Huy Logistics', ''];
+      fd.forEach(function (v, k) { lines.push(k + ': ' + v); });
+      var subject = 'Yêu cầu báo giá — ' + (fd.get('Họ tên') || '');
+      window.location.href = 'mailto:hiepnguyen.hunghiephuy@gmail.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(lines.join('\n'));
+    });
+  }
+});
