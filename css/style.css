@@ -114,9 +114,9 @@ a:hover{color:var(--orange-2)}
 .post-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
 .post-card .cover{aspect-ratio:16/9;object-fit:cover;object-position:center;width:100%}
 .post-card .body{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1}
-.post-card h3{margin:0;font-size:19px;line-height:1.4}
-.post-card h3 a{color:var(--navy)}
-.post-card h3 a:hover{color:var(--orange-2)}
+.post-card h2{margin:0;font-size:19px;line-height:1.4}
+.post-card h2 a{color:var(--navy)}
+.post-card h2 a:hover{color:var(--orange-2)}
 .post-card .excerpt{color:var(--muted);margin:0;flex:1}
 .post-card .meta{font-size:13px;color:#94A3B8}
 .article{max-width:820px;margin:0 auto}
