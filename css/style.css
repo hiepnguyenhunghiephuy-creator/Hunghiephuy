@@ -155,3 +155,9 @@ a:hover{color:var(--orange-2)}
 .site-footer .foot-logo b{color:#fff;font-size:17px;display:block;line-height:1.2}
 .site-footer .foot-logo span{font-size:11px;letter-spacing:2px;color:var(--gold);font-weight:700}
 .copyright{border-top:1px solid rgba(255,255,255,.14);padding:16px 0;text-align:center;font-size:13px;color:#94A3B8}
+
+.zalo-float{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:999;display:flex;align-items:center;justify-content:center;transition:transform .2s}
+.zalo-float:hover{transform:scale(1.08)}
+.zalo-float svg{width:56px;height:56px;border-radius:50%;display:block}
+@media(max-width:720px){.zalo-float{right:16px;bottom:16px;width:52px;height:52px}.zalo-float svg{width:52px;height:52px}}
+.form .note.success{color:#15803d;font-weight:600}
