@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="diag" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#0e1c30" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#0a1628"/>
+  <rect width="1200" height="630" fill="url(#diag)"/>
+  <rect x="0" y="0" width="14" height="630" fill="#dc3c37"/>
+  <!-- Logo -->
+  <rect x="60" y="42" width="56" height="56" rx="14" fill="#dc3c37"/>
+  <text x="88" y="72" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="central">H</text>
+  <text x="132" y="76" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#ffffff">HƯNG HIỆP HUY</text>
+  <text x="132" y="102" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#dc3c37">LOGISTICS</text>
+  <!-- Label -->
+  <text x="60" y="190" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#2da096">KIẾN THỨC LOGISTICS</text>
+  <!-- Title -->
+  <text x="60" y="272" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="bold" fill="#ffffff">Vận chuyển container</text>
+  <text x="60" y="342" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="bold" fill="#ffffff">Bắc – Nam: giá cước &amp;</text>
+  <text x="60" y="412" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="bold" fill="#ffffff">thời gian 2026</text>
+  <rect x="60" y="448" width="130" height="10" rx="5" fill="#2da096"/>
+  <!-- Route graphic -->
+  <line x1="985" y1="195" x2="915" y2="300" stroke="#788c9b" stroke-width="4" stroke-dasharray="14 10"/>
+  <line x1="845" y1="360" x2="810" y2="470" stroke="#788c9b" stroke-width="4" stroke-dasharray="14 10"/>
+  <!-- Container -->
+  <rect x="825" y="298" width="110" height="64" rx="8" fill="none" stroke="#2da096" stroke-width="4"/>
+  <line x1="838" y1="302" x2="838" y2="358" stroke="#2da096" stroke-width="3"/>
+  <line x1="852" y1="302" x2="852" y2="358" stroke="#2da096" stroke-width="3"/>
+  <line x1="866" y1="302" x2="866" y2="358" stroke="#2da096" stroke-width="3"/>
+  <line x1="880" y1="302" x2="880" y2="358" stroke="#2da096" stroke-width="3"/>
+  <line x1="894" y1="302" x2="894" y2="358" stroke="#2da096" stroke-width="3"/>
+  <line x1="908" y1="302" x2="908" y2="358" stroke="#2da096" stroke-width="3"/>
+  <line x1="922" y1="302" x2="922" y2="358" stroke="#2da096" stroke-width="3"/>
+  <!-- Pin: HÀ NỘI (teal) -->
+  <g>
+    <circle cx="1010" cy="112" r="26" fill="#2da096"/>
+    <polygon points="984,120 1036,120 1010,160" fill="#2da096"/>
+    <circle cx="1010" cy="112" r="11" fill="#ffffff"/>
+  </g>
+  <text x="1010" y="205" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">HÀ NỘI</text>
+  <!-- Pin: TP.HCM (red) -->
+  <g>
+    <circle cx="790" cy="442" r="26" fill="#dc3c37"/>
+    <polygon points="764,450 816,450 790,490" fill="#dc3c37"/>
+    <circle cx="790" cy="442" r="11" fill="#ffffff"/>
+  </g>
+  <text x="790" y="540" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">TP.HCM</text>
+</svg>
