@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="diag" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#0e1c30" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#0a1628"/>
+  <rect width="1200" height="630" fill="url(#diag)"/>
+  <rect x="0" y="0" width="14" height="630" fill="#dc3c37"/>
+  <!-- Logo -->
+  <rect x="60" y="42" width="56" height="56" rx="14" fill="#dc3c37"/>
+  <text x="88" y="72" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="bold" fill="#ffffff" text-anchor="middle" dominant-baseline="central">H</text>
+  <text x="132" y="76" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#ffffff">HƯNG HIỆP HUY</text>
+  <text x="132" y="102" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#dc3c37">LOGISTICS</text>
+  <!-- Label -->
+  <text x="60" y="190" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#2da096">KIẾN THỨC LOGISTICS</text>
+  <!-- Title -->
+  <text x="60" y="272" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="bold" fill="#ffffff">Vận chuyển container</text>
+  <text x="60" y="342" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="bold" fill="#ffffff">mùa mưa bão:</text>
+  <text x="60" y="412" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="bold" fill="#ffffff">cách bảo vệ hàng hóa</text>
+  <rect x="60" y="448" width="130" height="10" rx="5" fill="#2da096"/>
+  <!-- Rain cloud (top right) -->
+  <circle cx="905" cy="165" r="32" fill="#ffffff"/>
+  <circle cx="955" cy="140" r="40" fill="#ffffff"/>
+  <circle cx="1005" cy="165" r="32" fill="#ffffff"/>
+  <rect x="880" y="165" width="155" height="30" rx="15" fill="#ffffff"/>
+  <line x1="915" y1="215" x2="905" y2="245" stroke="#2da096" stroke-width="6" stroke-linecap="round"/>
+  <line x1="960" y1="215" x2="950" y2="245" stroke="#2da096" stroke-width="6" stroke-linecap="round"/>
+  <line x1="1005" y1="215" x2="995" y2="245" stroke="#2da096" stroke-width="6" stroke-linecap="round"/>
+  <text x="960" y="285" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle">MÙA MƯA BÃO</text>
+  <!-- Container graphic (right) -->
+  <rect x="800" y="300" width="320" height="150" rx="10" fill="none" stroke="#2da096" stroke-width="5"/>
+  <line x1="826" y1="306" x2="826" y2="444" stroke="#2da096" stroke-width="3"/>
+  <line x1="852" y1="306" x2="852" y2="444" stroke="#2da096" stroke-width="3"/>
+  <line x1="878" y1="306" x2="878" y2="444" stroke="#2da096" stroke-width="3"/>
+  <line x1="904" y1="306" x2="904" y2="444" stroke="#2da096" stroke-width="3"/>
+  <line x1="930" y1="306" x2="930" y2="444" stroke="#2da096" stroke-width="3"/>
+  <line x1="956" y1="306" x2="956" y2="444" stroke="#2da096" stroke-width="3"/>
+  <line x1="982" y1="306" x2="982" y2="444" stroke="#2da096" stroke-width="3"/>
+  <line x1="1008" y1="306" x2="1008" y2="444" stroke="#2da096" stroke-width="3"/>
+  <line x1="1034" y1="306" x2="1034" y2="444" stroke="#2da096" stroke-width="3"/>
+  <line x1="1060" y1="306" x2="1060" y2="444" stroke="#2da096" stroke-width="3"/>
+  <line x1="1086" y1="306" x2="1086" y2="444" stroke="#2da096" stroke-width="3"/>
+  <!-- Wheels -->
+  <circle cx="870" cy="472" r="18" fill="#788c9b"/>
+  <circle cx="870" cy="472" r="8" fill="#0a1628"/>
+  <circle cx="1050" cy="472" r="18" fill="#788c9b"/>
+  <circle cx="1050" cy="472" r="8" fill="#0a1628"/>
+  <text x="960" y="540" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">KIỂM TRA • CHẰNG BUỘC</text>
+</svg>
